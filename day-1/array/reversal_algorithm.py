@@ -17,7 +17,7 @@ def left_rotate(arr,d,n):
     return(arr)
 
 
-arr = [11,12,13,14,15,16]
+arr = [1,3,5,7,9,6]
 d= 2
 n= len(arr)
 
