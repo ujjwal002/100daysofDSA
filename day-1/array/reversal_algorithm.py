@@ -5,7 +5,7 @@ def reverse_array(arr, start, end):
         arr[end] = temp
         start=start+1
         end= end-1
-def left_rotate(arr,d,n):
+def left_rotated(arr,d,n):
     if d == 0:
         return None
     d = d%n 
@@ -21,4 +21,4 @@ arr = [1,3,5,7,9,6]
 d= 2
 n= len(arr)
 
-print(left_rotate(arr,d,n)) 
+print(left_rotated(arr,d,n)) 
