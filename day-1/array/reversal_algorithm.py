@@ -8,7 +8,7 @@ def reverse_array(arr, start, end):
 def left_rotate(arr,d,n):
     if d == 0:
         return None
-    d = d%n # i.e the n time rotation will give same that array
+    d = d%n 
     reverse_array(arr,0,d-1)
     reverse_array(arr,d,n-1)
     reverse_array(arr,0,n-1)
