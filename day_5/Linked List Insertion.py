@@ -41,35 +41,7 @@ class LinkedList:
 
         last.next = new_node
 
-    # Deleting a node
-    def deleteNode(self, position):
-
-        if self.head == None:
-            return
-
-        temp_node = self.head
-
-        if position == 0:
-            self.head = temp_node.next
-            temp_node = None
-            return
-
-        # Find the key to be deleted
-        for i in range(position - 1):
-            temp_node = temp_node.next
-            if temp_node is None:
-                break
-
-        # If the key is not present
-        if temp_node is None:
-            return
-
-        if temp_node.next is None:
-            return
-
-        next = temp_node.next.next
-        temp_node.next = None
-        temp_node.next = next
+   
 
     def printList(self):
         temp_node = self.head
